@@ -27,3 +27,15 @@ function toggleBacktop() {
     backtop.style.bottom = '-50px';
   }
 }
+
+const loading = document.getElementById("loading");
+window.addEventListener("load", () => {
+  loading.classList.add('loading-none');
+});
+const load =document.querySelector('#loading')
+setTimeout(() =>{
+    loading.style.opacity = '0'
+    setTimeout(() =>{
+        loading.style.display = 'none'
+    },500)
+},5000)
